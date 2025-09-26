@@ -19,6 +19,8 @@
 #define N_EQUALS !=
 #define ELSE else {
 #define ENDIF }
+#define START_IMPLEMENTATION ) {
+#define END_IMPLEMENTATION ENDIF
 #define END_WHEN ENDIF
 #define S_PROGRAM int main(int argc, char* argv[]){ 
 #define S_WIN int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdSHow) {
@@ -54,7 +56,14 @@
 #define BE
 #define AS
 #define WITH
+#define NUMBER_FUNCTION ILET
+#define DECIMAL_FUNCTION DLET
+#define DECIMAL_SMALL_FUNCTION FLET
+#define CHARACTER_FUNCTION CLET
+#define GENERIC void
+#define GENERIC_FUNCTION GENERIC
 #define GENERIC_SIZE(x) sizeof((x))
+#define P_NONE ()
 #if __cplusplus
 #define SZERO(x) {0}
 #else
